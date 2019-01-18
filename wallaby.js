@@ -17,7 +17,6 @@ module.exports = (wallaby) => ({
   files: [
     'src/**/*.js',
     'src/**/*.ts',
-    'tests/setup.js',
   ],
 
   tests: [
