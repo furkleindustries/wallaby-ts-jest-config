@@ -29,4 +29,9 @@ module.exports = (wallaby) => ({
   },
 
   testFramework: 'jest',
+
+  hints: {
+    ignoreCoverage: /istanbul ignore next/,
+    ignoreCoverageForFile: /istanbul ignore file/,
+  },
 });
