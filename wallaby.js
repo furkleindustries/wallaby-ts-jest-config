@@ -14,6 +14,10 @@ module.exports = (wallaby) => ({
     ),
   },
 
+  compilers: {
+    '**/*.ts?(x)': wallaby.compilers.typeScript({ module: 'commonjs' }),
+  },
+
   files: [
     'src/**/*.js',
     'src/**/*.ts',
